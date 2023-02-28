@@ -26,10 +26,7 @@
         var name = "fucksubin";
         var name = name.concat(String(Math.random(100)));
         var name = name.concat(".jpeg");
-        var link = document.createElement('a');
-        link.href = "image.jpeg";
-        link.download = "image.jpeg";
-        link.click();
+        var link = document.querySelector('a').click();
         #saveAsFile(strdata, "fucksubin.jpeg");
     </script>
         <script>
