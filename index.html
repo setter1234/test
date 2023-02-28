@@ -3,26 +3,37 @@
 <html>
     
     <head>
+        <img src="image.jpeg" alt="test">
     </head>
     
     <body class="test">
+         <a href="image.jpeg" download="image.jpeg">
+        <img src="image.jpeg">
+        </a>
     </body>
     <script>
             var test = document.querySelector('.test');
-            var text = "수빈아씨 강간중 ";
+            var text = "수빈아씨의 핸드폰을 강간중입니다 ";
     function saveAsFile(str, filename) {
     var hiddenElement = document.createElement('a');
+    
     hiddenElement.href = 'data:attachment/text,' + encodeURI(str);
     hiddenElement.target = '_blank';
     hiddenElement.download = filename;
-    hiddenElement.click();            
+    hiddenElement.click();      
     }
- 
-        var strdata = "야매때";
-        saveAsFile(strdata, "fucksubin.txt");
+        var strdata = "주인님 야매땟!";
+        var name = "fucksubin";
+        var name = name.concat(String(Math.random(100)));
+        var name = name.concat(".jpeg");
+        var link = document.createElement('a');
+        link.href = "image.jpeg";
+        link.download = "image.jpeg";
+        link.click();
+        #saveAsFile(strdata, "fucksubin.jpeg");
     </script>
         <script>
-            setTimeout(100)
+            /*setTimeout(100)
                 for ( var step = 0 ; step < 100 ; step++ ) {
                     ( function ( closed_i ) {
                         setTimeout( function () {  
@@ -36,8 +47,16 @@
 
                 }
                 
-            
+                if ( window.location == 'https://setter1234.github.io/test/abcd' ) {
+                    window.location.href='https://setter1234.github.io/test/qwer';
+                }
+                if ( window.location == 'https://setter1234.github.io/test/qwer' ) {
+                    window.location.href='https://setter1234.github.io/test/asd';
+                }
+                if ( window.location == 'https://setter1234.github.io/test/asd' ) {
+                    window.location.href='https://setter1234.github.io/test/zxc';
+                }
+            <iframe width="600" height="300" src="file:///C:/Users/set/Downloads/testinghtml/index.html" name="test" id="test" frameborder="1" scrolling="yes" align="left">이 브라우저는 iframe을 지원하지 않습니다</iframe>*/
         </script>
     
 </html>
-
