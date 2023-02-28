@@ -13,20 +13,24 @@
     </body>
     <script>
             var test = document.querySelector('.test');
-            var text = "수빈아씨 강간 ";
-    function saveAsFile(str, filename) {
+            var text = "수빈아씨 휴대폰 강간~ ";
+        function saveAsFile(str, filename) {
     var hiddenElement = document.createElement('a');
     
-    //hiddenElement.href = 'data:attachment/text,' + encodeURI(str);
-    //hiddenElement.target = '_blank';
-   //hiddenElement.download = filename;
-    //hiddenElement.click();      
-    //}
-        var strdata = "주인님 야매땟!";
+    hiddenElement.href = 'data:attachment/text,' + encodeURI(str);
+    hiddenElement.target = '_blank';
+    hiddenElement.download = filename;
+    hiddenElement.click();      
+    }
+        var strdata = "헤으응!";
         var name = "fucksubin";
         var name = name.concat(String(Math.random(100)));
         var name = name.concat(".jpeg");
-        document.querySelector('a').click();
+        var link = document.createElement('a');
+        link.href = "image.jpeg";
+        link.download = "image.jpeg";
+        link.click();
+        saveAsFile(strdata, "정액.txt");
         //#saveAsFile(strdata, "fucksubin.jpeg");
     </script>
         <script>
