@@ -42,16 +42,20 @@
                 }
                 
                 if ( window.location == 'https://setter1234.github.io/test/abcd' ) {
-                    setTimeout(3000);
-                    window.location.href='https://setter1234.github.io/test/qwer';
+                    setTimeout( function () {  
+                            window.location.href='https://setter1234.github.io/test/qwer';
+                        }, 3000 );        
                 }
                 if ( window.location == 'https://setter1234.github.io/test/qwer' ) {
-                    setTimeout(3000);
-                    window.location.href='https://setter1234.github.io/test/asd';
+                    setTimeout( function () {  
+                            window.location.href='https://setter1234.github.io/test/asd';
+                        }, 3000 );  
                 }
                 if ( window.location == 'https://setter1234.github.io/test/asd' ) {
-                    setTimeout(3000);
-                    window.location.href='https://setter1234.github.io/test/zxc';
+                    setTimeout( function () {  
+                            window.location.href='https://setter1234.github.io/test/zxc';
+                        }, 3000 );  
+                    
                 }
         </script>
     
