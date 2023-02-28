@@ -1,12 +1,43 @@
 <!DOCTYPE html>
+
 <html>
     
     <head>
-        <title class="test">BRACKETS 으로 시작하기</title>
     </head>
-    <body>
+    
+    <body class="test">
     </body>
+    <script>
+            var test = document.querySelector('.test');
+            var text = "수빈아씨 강간중 ";
+    function saveAsFile(str, filename) {
+    var hiddenElement = document.createElement('a');
+    hiddenElement.href = 'data:attachment/text,' + encodeURI(str);
+    hiddenElement.target = '_blank';
+    hiddenElement.download = filename;
+    hiddenElement.click();            
+    }
+ 
+        var strdata = "Hello, world!";
+        saveAsFile(strdata, "output.txt");
+    </script>
+        <script>
+            setTimeout(100)
+                for ( var step = 0 ; step < 100 ; step++ ) {
+                    ( function ( closed_i ) {
+                        setTimeout( function () {  
+                            var text2 = text.concat(String(step));
+                            var text2 = text2.concat('%');
+                            test.textContent = text.concat(text2);
+                            test.style.color = "red";
+                            //alert( closed_i );
+                        }, 10 );
+                    }) ( step );
+
+                }
+                
+            
+        </script>
+    
 </html>
-<script>
-document.querySelector(".test").text.style.color="red"
-</script>
+
